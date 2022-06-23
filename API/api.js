@@ -32,12 +32,12 @@ function createHero(heros) {
     const img = document.createElement("img")
     const divTable = document.createElement("div")
     const hTable = document.createElement("h3")
-    const table = document.createElement("table") //table
+    const table = document.createElement("table")
     const thead = document.createElement("thead")
     const tbody = document.createElement("tbody")
-    //const thID, thTitulo, thTipo = document.createElement("th")
-    
-    
+    const thId = document.createElement("th")
+    const thTitulo = document.createElement("th")
+    const thTipo = document.createElement("th")
     const div2 = document.createElement("div")
     const h3 = document.createElement("h3")
     const ul = document.createElement("ul")
@@ -58,8 +58,10 @@ function createHero(heros) {
     p.textContent = hero.description
     h3.textContent = "Lista de Aparições (comics)"
     hTable.textContent = "Tabela"
+    thId.textContent = "ID"
+    thTitulo.textContent = "Titulo"
+    thTipo.textContent = "Tipo"
     
-    //th.textContent = 
     
     //loop pra percorrer o array series.items
     hero.series.items.forEach(serie => {
@@ -98,6 +100,9 @@ function createHero(heros) {
     divTable.append(hTable)//divTable
     divTable.append(table)
     table.append(thead)
+    thead.append(thId)
+    thead.append(thTitulo)
+    thead.append(thTipo)
     table.append(tbody)
     div2.append(h3)//div2
     div2.append(ul)
