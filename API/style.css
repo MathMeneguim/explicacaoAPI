@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  background-color: brown;
+}
+.logo-marvel {
+  height: 54px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+main {
+  flex-grow: 1;
+}
+.content {
+  width: 70%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 24px;
+}
+.content h1 {
+  margin-top: 0px;
+}
+.content h4 {
+  margin-bottom: 0px;
+}
+.img-personagem {
+  width: 100%;
+}
+.table {
+  flex-direction: column;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+
+.list {
+  width: 30%;
+  background-color: rgb(232, 26, 26);
+}
+.title-list {
+  padding: 1em;
+  padding-bottom: 0;
+}
+footer {
+  background-color: #333333;
+  height: 56px;
+}
+.color-white {
+  color: white;
+}
+.link-marvel {
+  text-decoration: none;
+  color: white;
+}
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
